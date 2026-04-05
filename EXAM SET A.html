@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Listen Exam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{font-family:Poppins;background:linear-gradient(120deg,#e3f2fd,#fce4ec);margin:0;}
+.header{background:#1565c0;color:#fff;padding:15px;text-align:center;}
+.timer{position:fixed;top:10px;right:15px;background:red;color:#fff;padding:10px;border-radius:10px;}
+.container{padding:20px;}
+.question{background:#fff;padding:15px;margin-bottom:12px;border-radius:10px;}
+button{width:100%;padding:12px;background:#1565c0;color:#fff;border:none;border-radius:8px;margin-top:10px;}
+#examSection{display:none;}
+#instructionBox{display:none;}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>LESSON LISTEN CERTIFICATION / QUALIFICATION TEST 2026 </h2>
+<p>Duration: 1 Hour</p>
+</div>
+
+<div class="timer" id="timer">60:00</div>
+
+<div class="container">
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<form id="examForm" target="hidden_iframe"
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-ylrRIuvZFO4JwtelabJXaPIDDKk_3Sv7LDWmBBoU5zThkQ/formResponse">
+
+<!-- DETAILS -->
+<div class="question">
+Admit Number
+<input id="admit" name="entry.1290332715" required>
+</div>
+
+<div class="question">
+Email
+<input id="email" name="entry.91331546" required>
+</div>
+
+<button type="button" onclick="showInstructions()" id="startBtn">Start Exam</button>
+
+<!-- INSTRUCTIONS -->
+<div id="instructionBox" class="question">
+
+<h3>Instructions to Candidates</h3>
+<ul>
+<li>This is a fully online examination.</li>
+<li>Ensure stable internet and battery.</li>
+<li>Do not refresh or switch tabs.</li>
+<li>Exam is time-bound.</li>
+<li>System auto submits at end.</li>
+<li>Symbols like [^2] means square</li>
+<li>This Exam Contains MCQs (1 Mark for each) & Short answers (2 mark for each) </li>
+</ul>
+
+<label>
+<input type="checkbox" id="agreeCheck"> I agree to the instructions
+</label>
+
+<button type="button" onclick="beginExam()">Start Now</button>
+
+</div>
+
+<!-- EXAM -->
+<div id="examSection">
+
+<!-- YOUR QUESTIONS (UNCHANGED) -->
+<div class="question">1. 3 + 6 x 2 = ?  <br>
+<input type="radio" name="entry.387878562" value="A) 18"> A) 18<br>
+<input type="radio" name="entry.387878562" value="B) 15"> B) 15<br>
+<input type="radio" name="entry.387878562" value="C) 12"> C) 12<br>
+<input type="radio" name="entry.387878562" value="D) 9">  D)9 
+</div>
+
+<div class="question">2.If sin theta = 53 find cose ?  <br>
+<input type="radio" name="entry.387878562" value="A) 4/5"> A) 4/5<br>
+<input type="radio" name="entry.387878562" value="B) 3/4"> B) 3/4<br>
+<input type="radio" name="entry.387878562" value="C) 5/4"> C) 5/4<br>
+<input type="radio" name="entry.387878562" value="D) 2/5"> D) 2/5
+</div>
+
+<div class="question">3. Solve: 2x + 5 = 15 <br>
+<input type="radio" name="entry.387878562" value="A) 10"> A) 10<br>
+<input type="radio" name="entry.387878562" value="B) 5"> B) 5<br>
+<input type="radio" name="entry.387878562" value="C) 3"> C) 3<br>
+<input type="radio" name="entry.387878562" value="D) 7"> D)7 
+</div>
+
+<div class="question">4.A body moving with constant velocity has: <br>
+<input type="radio" name="entry.387878562" value="A) Changing direction"> A) Changing direction<br>
+<input type="radio" name="entry.387878562" value="B) Constant speed & direction"> B)Constant speed & direction <br>
+<input type="radio" name="entry.387878562" value="C) Zero displacement"> C) Zero displacement<br>
+<input type="radio" name="entry.387878562" value="D) Infinite speed"> D) Infinite speed
+</div>
+
+<div class="question">5.If displacement is zero, velocity is: <br>
+<input type="radio" name="entry.387878562" value="A) Always zero"> A) Always zero<br>
+<input type="radio" name="entry.387878562" value="B) May not be zero"> B) May not be zero<br>
+<input type="radio" name="entry.387878562" value="C) Infinite"> C) Infinite<br>
+<input type="radio" name="entry.387878562" value="D) Constant"> D)Constant 
+</div>
+
+<div class="question">6.Sound travels Tastest In: <br>
+<input type="radio" name="entry.387878562" value="A)Air "> A)Air <br>
+<input type="radio" name="entry.387878562" value="B) Water"> B) Water<br>
+<input type="radio" name="entry.387878562" value="C) Steel"> C) Steel<br>
+<input type="radio" name="entry.387878562" value="D) Vacuum"> D)Vacuum 
+</div>
+
+<div class="question">7.Reflex action is controlled by: <br>
+<input type="radio" name="entry.387878562" value="A) Brain"> A) Brain<br>
+<input type="radio" name="entry.387878562" value="B) Spinal cord"> B) Spinal cord<br>
+<input type="radio" name="entry.387878562" value="C) Heart"> C) Heart<br>
+<input type="radio" name="entry.387878562" value="D) Hormones"> D)Hormones 
+</div>
+
+<div class="question">8.Why is DNA called blueprint of life? <br>
+<input type="radio" name="entry.387878562" value="A) Stores energy"> A) Stores energy<br>
+<input type="radio" name="entry.387878562" value="B) Controls traits"> B) Controls traits<br>
+<input type="radio" name="entry.387878562" value="C) Produces hormones"> C) Produces hormones<br>
+<input type="radio" name="entry.387878562" value="D) Carries oxygen"> D)Carries oxygen 
+</div>
+
+<div class="question">9.Which hormone controls blood glucose? <br>
+<input type="radio" name="entry.387878562" value="A) Thyroxine"> A) Thyroxine<br>
+<input type="radio" name="entry.387878562" value="B) Insulin"> B) Insulin<br>
+<input type="radio" name="entry.387878562" value="C) Adrenaline"> C) Adrenaline<br>
+<input type="radio" name="entry.387878562" value="D) Melatonin"> D) Melatonin
+</div>
+
+<div class="question">10.LPG mainly contains: <br>
+<input type="radio" name="entry.387878562" value="A) Methane"> A) Methane<br>
+<input type="radio" name="entry.387878562" value="B) Propane/Butane"> B) Propane/Butane<br>
+<input type="radio" name="entry.387878562" value="C) Ethene"> C) Ethene<br>
+<input type="radio" name="entry.387878562" value="D) Benzene"> D)Benzene 
+</div>
+
+<div class="question">11. If tan theta = 1 then 0 = ? <br>
+<input type="radio" name="entry.387878562" value="A) 30°"> A) 30°<br>
+<input type="radio" name="entry.387878562" value="B) 45°"> B) 45°<br>
+<input type="radio" name="entry.387878562" value="C) 60°"> C) 60°<br>
+<input type="radio" name="entry.387878562" value="D) 90°"> D) 90°
+</div>
+
+<div class="question">12.Expand: (a + b) ^ 2 <br>
+<input type="radio" name="entry.387878562" value="A) a ^ 2 + b ^ 2"> A) a ^ 2 + b ^ 2<br>
+<input type="radio" name="entry.387878562" value="B) a ^ 2 + 2ab + b ^ 2"> B) a ^ 2 + 2ab + b ^ 2<br>
+<input type="radio" name="entry.387878562" value="C) a ^ 2 - b ^ 2"> C) a ^ 2 - b ^ 2<br>
+<input type="radio" name="entry.387878562" value="D) 2ab"> D)2ab 
+</div>
+
+<div class="question">13.Velocity = <br>
+<input type="radio" name="entry.387878562" value="A) Distance/Time"> A) Distance/Time<br>
+<input type="radio" name="entry.387878562" value="B) Displacement/Time"> B)Displacement/Time <br>
+<input type="radio" name="entry.387878562" value="C) Speed x Time"> C) Speed x Time<br>
+<input type="radio" name="entry.387878562" value="D) Force x Time"> D)Force x Time 
+</div>
+
+<div class="question">14.Which wave needs medium? <br>
+<input type="radio" name="entry.387878562" value="A) Light"> A) Light<br>
+<input type="radio" name="entry.387878562" value="B) Sound"> B) Sound<br>
+<input type="radio" name="entry.387878562" value="C) X-rays"> C) X-rays<br>
+<input type="radio" name="entry.387878562" value="D) Radio"> D) Radio
+</div>
+
+<div class="question">15.Natural selection means: <br>
+<input type="radio" name="entry.387878562" value="A) Artificial breeding"> A) Artificial breeding<br>
+<input type="radio" name="entry.387878562" value="B) Survival of fittest"> B) Survival of fittest<br>
+<input type="radio" name="entry.387878562" value="C) Mutation"> C) Mutation<br>
+<input type="radio" name="entry.387878562" value="D) Cloning"> D) Cloning
+</div>
+
+<div class="question">16.General formula of alkanes: <br>
+<input type="radio" name="entry.387878562" value="A) CnH2n"> A) CnH2n<br>
+<input type="radio" name="entry.387878562" value="B) CnH2n+2"> B) CnH2n+2<br>
+<input type="radio" name="entry.387878562" value="C) CnH2n-2"> C) CnH2n-2<br>
+<input type="radio" name="entry.387878562" value="D) CH"> D)CH 
+</div>
+
+<div class="question">17.If 2x = 8 -> x = <br>
+<input type="radio" name="entry.387878562" value="A) 2"> A) 2<br>
+<input type="radio" name="entry.387878562" value="B) 4"> B) 4<br>
+<input type="radio" name="entry.387878562" value="C) 6"> C) 6<br>
+<input type="radio" name="entry.387878562" value="D) 8"> D)8 
+</div>
+
+<div class="question">18.Speed of sound increases with: <br>
+<input type="radio" name="entry.387878562" value="A) Density decrease"> A) Density decrease<br>
+<input type="radio" name="entry.387878562" value="B) Temperature increase"> B) Temperature increase<br>
+<input type="radio" name="entry.387878562" value="C) Vacuum"> C) Vacuum<br>
+<input type="radio" name="entry.387878562" value="D) Humidity zero"> D) Humidity zero
+</div>
+
+<div class="question">19.Which is involuntary action? <br>
+<input type="radio" name="entry.387878562" value="A) Writing"> A) Writing<br>
+<input type="radio" name="entry.387878562" value="B) Walking"> B) Walking<br>
+<input type="radio" name="entry.387878562" value="C) Breathing"> C) Breathing<br>
+<input type="radio" name="entry.387878562" value="D) Speaking"> D) Speaking
+</div>
+
+<div class="question">20.Which is aromatic compound? <br>
+<input type="radio" name="entry.387878562" value="A) Ethane"> A) Ethane<br>
+<input type="radio" name="entry.387878562" value="B) Benzene"> B) Benzene<br>
+<input type="radio" name="entry.387878562" value="C) Propane"> C) Propane<br>
+<input type="radio" name="entry.387878562" value="D) Methane"> D)Methane 
+</div>
+<!-- ADD REST Q4–Q20 SAME WAY -->
+
+<!-- SHORT ANSWERS -->
+<div class="question">21.A ladder makes an angle of 30° with ground. 
+If its length is 10 m, find height reached. <input name="entry.1198110334"></div>
+<div class="question">22.A car moves 100 m east and then 100 m west.
+Find displacement
+Explain why displacement = distance <input name="entry.1553101503"></div>
+<div class="question">23.During a thunderstorm, lightning is seen instantly but thunder is heard after 5 seconds.
+a) Explain why this happens
+b) Calculate approximate distance of lightning (speed of sound = 340 m/s)
+c) Why does sound require medium but light does not? <input name="entry.966549908"></div>
+<div class="question">24.Why do successive hydrocarbons differ by -CH2- group? <input name="entry.1529019930"></div>
+<div class="question">25.A person hears thunder after lightning:
+Why does this happen? Which travels faster? Explain <input name="entry.1651031715"></div>
+
+<button type="submit">Submit Exam</button>
+
+</div>
+
+</form>
+
+<div id="done" style="display:none;text-align:center;">
+<h2>✅ *Submitted Successfully.
+*Result will be publish within MAY 15</h2>
+</div>
+
+</div>
+
+<script>
+
+// ONE TIME ATTEMPT
+if(localStorage.getItem("done")){
+document.body.innerHTML="<h2 style='text-align:center'>Already Attempted</h2>";
+}
+
+// SHOW INSTRUCTIONS
+function showInstructions(){
+if(!admit.value || !email.value){
+alert("Fill details first!");
+return;
+}
+admit.readOnly=true;
+email.readOnly=true;
+
+instructionBox.style.display="block";
+startBtn.style.display="none";
+}
+
+// START FINAL EXAM
+let time=3600,started=false;
+
+function beginExam(){
+if(!agreeCheck.checked){
+alert("You must agree!");
+return;
+}
+
+// FULLSCREEN
+document.documentElement.requestFullscreen().catch(()=>{});
+
+instructionBox.style.display="none";
+examSection.style.display="block";
+
+startTimer();
+}
+
+// TIMER
+function startTimer(){
+if(started)return;
+started=true;
+
+let t=setInterval(()=>{
+let m=Math.floor(time/60),s=time%60;
+timer.innerHTML=m+":"+(s<10?"0":"")+s;
+time--;
+
+if(time<0){
+clearInterval(t);
+alert("Time up!");
+examForm.submit();
+}
+},1000);
+}
+
+// ANTI-CHEAT TAB SWITCH
+document.addEventListener("visibilitychange",()=>{
+if(document.hidden){
+alert("Tab switch detected! Submitting...");
+examForm.submit();
+}
+});
+
+// EXIT FULLSCREEN
+document.addEventListener("fullscreenchange",()=>{
+if(!document.fullscreenElement && started){
+alert("Fullscreen exited! Submitting...");
+examForm.submit();
+}
+});
+
+// SUBMIT
+let submitted=false;
+examForm.onsubmit=()=>{
+submitted=true;
+localStorage.setItem("done","yes");
+};
+
+document.querySelector("iframe").onload=()=>{
+if(submitted){
+examForm.style.display="none";
+done.style.display="block";
+}
+};
+
+// DISABLE RIGHT CLICK
+document.addEventListener("contextmenu",e=>e.preventDefault());
+
+</script>
+
+</body>
+</html>
